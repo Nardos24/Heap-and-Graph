@@ -2,15 +2,15 @@
 
 This repository contains Python implementations of various data structures and algorithms, including:
 
-Heap:
-maxheap.py: Implements a Max Heap data structure, including operations like insertion, deletion, and heapify.
+ Heap:
+ maxheap.py: Implements a Max Heap data structure, including operations like insertion, deletion, and heapify.
 sortheap.py: Demonstrates the use of the Max Heap to sort a list of elements.
 heapify.py: Provides a function to build a Max Heap from a list of elements.
-Graph:
+ Graph:
 graph.py: Implements a Graph data structure, including operations for adding and removing vertices and edges, as well as traversal algorithms.
 BFS & DFS.py: Demonstrates the use of Breadth-First Search (BFS) and Depth-First Search (DFS) algorithms on a graph.
-Usage
-Heap:
+ Usage
+ Heap:
 maxheap.py: Create a Max Heap instance and use the provided methods to insert, delete, and heapify elements.
 sortheap.py: Call the heapsort() function to sort a list of elements using the Max Heap.
 heapify.py: Use the heapify() function to build a Max Heap from a list of elements.
