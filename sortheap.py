@@ -17,8 +17,8 @@ def heapify(A, n, i):
         largest = right
 
     if largest != i:
-        A[i], A[largest] = A[largest], A[i]  # Swap
-        heapify(A, n, largest)  # Recursively heapify affected subtree
+        A[i], A[largest] = A[largest], A[i]  
+        heapify(A, n, largest)  
 
 def heap_sort(A):
     """
@@ -32,17 +32,17 @@ def heap_sort(A):
     """
     n = len(A)
 
-    # Build max heap
+    
     for i in range(n // 2 - 1, -1, -1):
         heapify(A, n, i)
 
-    # Extract elements from the heap
+    
     for i in range(n - 1, 0, -1):
-        A[0], A[i] = A[i], A[0]  # Swap root with last element
-        heapify(A, i, 0)  # Heapify the remaining sub-heap
+        A[0], A[i] = A[i], A[0]
+        heapify(A, i, 0)  
 
-# Example usage
+
 arr = [4, 1, 3, 2, 16, 9, 10, 14, 8, 7]
 heap_sort(arr)
 print("Sorted array:", arr)
-  # Output: [1, 2, 3, 4, 7, 8, 9, 10, 14, 16]
+  
